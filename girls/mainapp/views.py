@@ -1,9 +1,8 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
 
 def index(request):
-    return render(request, '')
+    return render(request, 'index.html')
 
 def about(request):
-    return HttpResponse("<h4>Do work<h4>")
+    return render(request, 'about.html')
